@@ -12,4 +12,4 @@ def get_items(request):
     return HttpResponse(ITEMS)
 
 def home(request):
-    return render(request,"./templates/interaction/main.html")
+    return render(request,"interaction/main.html")
