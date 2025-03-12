@@ -18,6 +18,6 @@ class User(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=20)
-    seller = models.ForeignKey(User, on_delete=models.CASCADE)
+    seller = models.ForeignKey(to=User, on_delete=models.CASCADE)
     category = models.CharField(max_length=20)
     price = models.PositiveBigIntegerField()
